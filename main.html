@@ -1,24 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Colorful Squares</title>
-	<style>
-		.square {
-			width: 50px;
-			height: 50px;
-			display: inline-block;
-			margin: 10px;
-			background-color: #E6E6FA; /*lavender */
-			cursor: pointer;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Focus Squares</title>
 </head>
 <body>
-	<div class="square" id="square1" ></div>
-	<div class="square" id="square2" ></div>
-	<div class="square" id="square3" ></div>
-
-	<script type="text/javascript" src="./script.js">
-	</script>
+    <div id="square1" class="lavender" onmouseover="changeColors(1)" onmouseout="resetColors(1)"></div>
+    <div id="square2" class="lavender" onmouseover="changeColors(2)" onmouseout="resetColors(2)"></div>
+    <div id="square3" class="lavender" onmouseover="changeColors(3)" onmouseout="resetColors(3)"></div>
 </body>
 </html>
